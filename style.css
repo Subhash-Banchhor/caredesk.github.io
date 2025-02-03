@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C9D9C9;
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 150px;
+    & img{
+        width: 145px;
+        border-radius: 40px;
+        border: 2px groove #C9D9C9;
+        box-shadow: 0 0 5px 2px gray;
+    }
+}
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: #CB9DF2;
+    color: white;
+    font-weight: bolder;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border: 2px groove transparent;
+    box-shadow: 0 0 5px 2px gray;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    position: fixed;
+    z-index: 1000;
+
+& a{
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 200ms ease-in-out;
+    text-shadow:  2px 5px 15px rgba(39, 37, 37, 0.9);
+    &:hover{
+        text-shadow:  2px 5px 15px #C9D9C9;
+    }
+}
+}
+.container {
+    text-align: center;
+    padding: 300px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Typewriter animation for welcome text */
+.welcome, .tagline {
+    display: inline-block;
+    border-right: 2px solid #333;
+    background-color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.9s step-end infinite;
+}
+
+/* Styling for welcome and tagline text */
+.welcome {
+    font-size: 3.5em;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Keyframes for the typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Keyframes for the blinking caret */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    & .menu{
+        height: 100vh;
+        position: fixed;
+        width: 20%;
+        padding-top: 106px;
+        padding-left: 4%;
+        background-color: #CB9DF2;
+        & a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            line-height: 80px;
+            background-color: #C9D9C9;
+            border-radius: 15px;
+            border: 2px groove transparent;
+            box-shadow: 0 0 5px 2px gray;
+            padding: 10px;
+        }
+        & #active{
+            box-shadow: 0 0 5px 2px cyan;
+        }
+        & a:hover{
+            box-shadow: 0 0 5px 2px white;
+        }
+    }
+    & .dash{
+        width: 80%;
+        margin-left: 20%;
+        height: 100vh;
+        scroll-behavior: smooth;
+        padding: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & .boxes{
+            width: 210px;
+            height: 75px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1.5;
+            border: 2px groove transparent;
+            border-radius: 25%;
+            text-align: center;
+            box-shadow: 0 0 5px 2px gray;
+        }
+        #a{
+            background-color: #FFE31A;
+        }
+        #b{
+            background-color: #3bce58;
+        }
+        #c{
+            background-color: #FA812F;
+        }
+        #d{
+            background-color: #C6E7FF;
+        }
+        text{
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+    & .info{
+        width: 100%;
+        margin: -50px;
+        margin-top:50px;
+        height: max-content;
+        background-color: white;
+        padding: 20px;
+        border: 2px groove transparent;
+        border-radius: 25px;
+        box-shadow: 0 0 5px 2px gray;
+        & h3{
+            margin: 25px;
+            text-decoration: underline;
+        }
+        & li{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        & p{
+            margin-top: 20px;
+        }
+        & h2{
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+        & #text2{
+            width: 80%;
+            height: 300px;
+            margin-left: 90px;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 2px groove gray;
+            border-radius: 5px;
+        }
+        & text{
+            font-size: 30px;
+            margin-left: 25%;
+        }
+        & table{
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            font-size: large;
+            position: inherit;
+            & th{
+                background-color: #C6E7FF;
+            }
+            & tr{
+                height: 45px;
+            }
+            & a{
+                text-decoration: none;
+                color: black;
+                padding: 2px;
+                border-radius: 3px;
+            }
+            & .g{
+                margin: 2px;
+                padding: 5px;
+                background-color: #3bce58;
+            }
+            & .r{
+                margin: 2px;
+                padding: 5px;
+                background-color: #FA812F;
+            }
+        }
+        & #submit{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 90px;
+            width: 80px;
+            height: 35px;
+            margin-top: 25px;
+            border: 2px groove transparent;
+            text-shadow:  1px 2px 5px rgba(39, 37, 37, 0.9);
+            box-shadow: 0 0 5px 2px gray;
+            border-radius: 5px;
+            background-color: rgb(19, 215, 19);
+        }
+    }
+}
+.box{
+    width: 25%;
+    height: 350px;
+    color: white;
+    text-shadow:  2px 5px 15px rgba(39, 37, 37, 0.9);
+    background-color: #CB9DF2;
+    padding: 30px;
+    border: 2px groove transparent;
+    box-shadow: 0 0 5px 2px gray;
+    border-radius: 5px;
+    & h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    & p{
+        font-size: 20px;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    & #text{
+        width: 320px;
+        height: 35px;
+        padding: 10px;
+        margin-top: 10px;
+        border: 2px groove lightgray;
+        border-radius: 5px;
+    }
+    & #submit{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        width: 80px;
+        height: 35px;
+        margin-top: 25px;
+        border: 2px groove transparent;
+        text-shadow:  1px 2px 5px rgba(39, 37, 37, 0.9);
+        box-shadow: 0 0 5px 2px gray;
+        border-radius: 5px;
+        background-color: rgb(19, 215, 19);
+    }
+}
+.box2{
+    width: 25%;
+    margin-top: 70px;
+    height: max-content;
+    color: white;
+    text-shadow:  2px 5px 15px rgba(39, 37, 37, 0.9);
+    background-color: #CB9DF2;
+    padding: 30px;
+    border: 2px groove transparent;
+    box-shadow: 0 0 5px 2px gray;
+    border-radius: 5px;
+    & h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    & p{
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    & #text{
+        width: 320px;
+        height: 35px;
+        padding: 10px;
+        margin-top: 10px;
+        border: 2px groove lightgray;
+        border-radius: 5px;
+    }
+    & #submit{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        width: 80px;
+        height: 35px;
+        margin-top: 25px;
+        border: 2px groove transparent;
+        text-shadow:  1px 2px 5px rgba(39, 37, 37, 0.9);
+        box-shadow: 0 0 5px 2px gray;
+        border-radius: 5px;
+        background-color: rgb(19, 215, 19);
+    }
+}
